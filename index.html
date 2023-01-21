@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="ltr" lang= "en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Currency Exchange App</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="C:\Users\rubal\currency_exchange\CSS\style.css" >
+        
+        
+    </head>
+    
+    <body>
+        <!-- Currency exchange rates -->
+        <div class="display-4 text-center">Check currency exchange rates (live)</div>
+        <div class="APIContainer">
+            <h4>Find out current currency exchange rates</h4>
+            <form class="currency-form">
+                <div>
+                    <label  for="from-currency">From:</label>
+                    <input type="text" id="from-currency" name="from-currency">
+                </div>
+
+                <div>
+                    <label  for="to-currency">To:</label>
+                    <input type="text" id="to-currency" name="to-currency">
+                </div>
+                
+            </form>
+            <button  id="fetch-button">Calculate</button>
+            <div>
+                <h4 id="currencyResult">Result: 0</h4>
+                
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
